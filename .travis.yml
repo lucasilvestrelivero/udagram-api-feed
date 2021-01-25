@@ -20,4 +20,4 @@ script:
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker lucasilvestrelivero/udagram-api-feed
+  - docker push lucasilvestrelivero/udagram-api-feed
